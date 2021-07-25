@@ -1,0 +1,18 @@
+> IST Taguspark, lat 38.7372, -9.3023 long, 20 docas, 4 BIC premio, 12 bicicletas, 0 levantamentos, 0 devolucoes, https://www.google.com/maps/place/38.7372,-9.3023
+> Path: /grpc/bicloin/hub/1 OK
+Path: /grpc/bicloin/hub/2 DOWN
+Path: /grpc/bicloin/rec/1 OK
+> istt, lat 38.7372, -9.3023 long, 20 docas, 4 BIC premio, 12 bicicletas, a 242 metros.
+stao, lat 38.6867, -9.3124 long, 30 docas, 3 BIC premio, 20 bicicletas, a 5832 metros.
+jero, lat 38.6972, -9.2064 long, 30 docas, 3 BIC premio, 20 bicicletas, a 10252 metros.
+> ERRO fora de alcance.
+> alice em https://www.google.com/maps/place/38.7372,-9.3023
+> ERRO impossivel alugar bike, saldo indisponivel ou ja possui atualmente uma bicicleta.
+> alice 100 BIC
+> OK
+> alice em https://www.google.com/maps/place/38.7376,-9.1545
+> ERRO docas estao cheias.
+> alice em https://www.google.com/maps/place/38.7369,-9.1366
+> OK
+> alice 93 BIC
+> Fim do ficheiro.

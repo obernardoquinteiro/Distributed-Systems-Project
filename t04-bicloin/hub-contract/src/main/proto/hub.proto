@@ -1,0 +1,128 @@
+//
+// Protocol buffers definition
+//
+syntax = "proto3";
+package pt.tecnico.bicloin.hub.grpc;
+
+option java_multiple_files = true;
+
+
+
+message PingRequest {
+
+}
+
+message PingResponse {
+	string output = 1;
+}
+
+
+
+message BalanceRequest {
+    string username = 1;
+}
+
+message BalanceResponse {
+    int32 balance = 1;
+}
+
+
+
+message TopUpRequest {
+    string username = 1;
+    int32 cash = 2;
+    string cellphone = 3;
+}
+
+message TopUpResponse {
+    int32 balance = 1;
+}
+
+
+
+message InfoStationRequest {
+    string abrev = 1;
+}
+
+message InfoStationResponse {
+    string nome = 1;
+    string lat = 2;
+    string long = 3;
+    int32 docas = 4;
+    int32 bikes = 5;
+    int32 prize = 6;
+    int32 levantamentos = 7;
+    int32 devolucoes = 8;
+    string url = 9;
+}
+
+
+
+message LocateStationRequest {
+    string coordsLat = 1;
+    string coordsLong = 2;
+    int32 k = 3;
+}
+
+message LocateStationResponse {
+    repeated string abrev = 1;
+}
+
+
+
+message BikeUpRequest {
+    string username = 1;
+    string coordsLat = 2;
+    string coordsLong = 3;
+    string abrev = 4;
+}
+
+message BikeUpResponse {
+    string response = 1;
+}
+
+
+
+message BikeDownRequest {
+    string username = 1;
+    string coordsLat = 2;
+    string coordsLong = 3;
+    string abrev = 4;
+}
+
+message BikeDownResponse {
+    string response = 1;
+}
+
+
+message GetDistanceRequest {
+    double lat1 = 1;
+    double long1 = 2;
+    double lat2 = 3;
+    double long2 = 4;
+}
+
+message GetDistanceResponse {
+    double distance = 1;
+}
+
+message SysStatusRequest {
+    string status = 1;
+    repeated string servers = 2;
+}
+
+message SysStatusResponse {
+    string status = 1;
+}
+
+service HubService {
+  rpc ping(PingRequest) returns (PingResponse);
+  rpc balance(BalanceRequest) returns (BalanceResponse);
+  rpc topUp(TopUpRequest) returns (TopUpResponse);
+  rpc infoStation(InfoStationRequest) returns (InfoStationResponse);
+  rpc locateStation(LocateStationRequest) returns (LocateStationResponse);
+  rpc bikeUp(BikeUpRequest) returns (BikeUpResponse);
+  rpc bikeDown(BikeDownRequest) returns (BikeDownResponse);
+  rpc getDistance(GetDistanceRequest) returns (GetDistanceResponse);
+  rpc sysStatus(SysStatusRequest) returns (SysStatusResponse);
+}

@@ -1,0 +1,14 @@
+> alice 100 BIC
+> OK
+> alice em https://www.google.com/maps/place/38.7372,-9.3024
+> OK
+> alice 90 BIC
+> alice em https://www.google.com/maps/place/38.6867,-9.3124
+> OK
+> alice 93 BIC
+> alice em https://www.google.com/maps/place/38.706,-9.143
+> OK
+> alice em https://www.google.com/maps/place/38.7367,-9.139
+> ERRO fora de alcance
+> alice 83 BIC
+> Fim do ficheiro.

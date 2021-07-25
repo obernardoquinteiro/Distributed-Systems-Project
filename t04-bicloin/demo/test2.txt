@@ -1,0 +1,30 @@
+# informacao istt
+info istt
+
+# informacao dos servidores
+sys_status
+
+# scan das 3 estacoes mais proximas
+scan 3
+
+# tentar fazer bike-up a mais de 200 metros de istt
+bike-up istt
+
+# movimentar para coordenadas istt
+move 38.7372 -9.3023
+
+# tentar fazer bike-up sem balance disponivel
+bike-up istt
+
+# meter 10€ na conta do user e depois levantar uma bicicleta no istt
+top-up 10
+bike-up istt
+
+# tentar fazer bike-down em gulb que tem todas as docas ocupadas
+move 38.7376 -9.1545
+bike-down gulb
+
+# fazer bike-down ista
+move 38.7369 -9.1366
+bike-down ista
+balance
